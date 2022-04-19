@@ -112,9 +112,12 @@
     ripgrep
     rhash
     p7zip
+    nheko
   ];
 
   environment.variables = rec { EDITOR = "vim"; };
+
+  services.gnome.gnome-keyring.enable = true;
 
   security.rtkit.enable = true;
   services.pipewire = {
