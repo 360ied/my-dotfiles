@@ -115,7 +115,10 @@
     nheko
   ];
 
-  environment.variables = rec { EDITOR = "vim"; };
+  environment.variables = rec {
+    EDITOR = "vim";
+    MOZ_ENABLE_WAYLAND = "1";
+};
 
   services.gnome.gnome-keyring.enable = true;
 
