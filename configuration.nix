@@ -106,7 +106,6 @@
     imv
     aria2
     bat
-    tor-browser-bundle-bin
     gocryptfs
     hexyl
     ripgrep
