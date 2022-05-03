@@ -50,7 +50,7 @@
   # services.xserver.xkbOptions = "eurosign:e";
 
   # Enable CUPS to print documents.
-  # services.printing.enable = true;
+  services.printing.enable = true;
 
   # Enable sound.
   # sound.enable = true;
@@ -112,15 +112,28 @@
     ripgrep
     rhash
     p7zip
+    sshfs
+    libreoffice
+    pandoc
+    tetex
+    file
+    element-desktop
     nheko
+    ungoogled-chromium
+    qbittorrent
+    audacity
+    mumble
+    killall
+    qutebrowser
   ];
 
   environment.variables = rec {
     EDITOR = "vim";
     MOZ_ENABLE_WAYLAND = "1";
-};
+  };
 
   services.gnome.gnome-keyring.enable = true;
+  services.earlyoom.enable = true;
 
   security.rtkit.enable = true;
   services.pipewire = {
